@@ -1,0 +1,30 @@
+body{
+    background: #424242;
+}
+.sudoku{
+    display: grid;
+    grid-template-columns: repeat(3, 30px) 5px repeat(3, 30px) 5px repeat(3, 30px);
+    grid-template-rows: repeat(3, 30px) 5px repeat(3, 30px) 5px repeat(3, 30px);
+    grid-gap: 2px;
+}
+
+.trait1{
+    grid-row: 1 / 12; /* Commence à la ligne 1 et finit à la 12. */
+    grid-column: 4/ 5; /*se met entre la collone 4 et 5*/
+    background: peru;
+}
+.trait2{
+    grid-row: 4 / 5;
+    grid-column: 1/ 12; 
+    background: pink;
+}
+.trait3{
+    grid-row: 1/12;
+    grid-column: 8/9;
+    background: rgb(202, 160, 221);
+}
+.trait4{
+    grid-row: 8 / 9;
+    grid-column: 1/ 12; 
+    background: powderblue;
+}
